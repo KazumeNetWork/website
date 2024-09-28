@@ -8,6 +8,7 @@
                 });
             });
         });
+
         document.addEventListener('click', function() {
             var audio = document.getElementById('audio');
             if (audio.paused) {
@@ -16,3 +17,6 @@
             }
         });
         
+/*        window.addEventListener('load', () => {
+            document.body.classList.add('visible');
+        });*/
