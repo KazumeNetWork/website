@@ -3,11 +3,11 @@
     
 <head>
     <meta charset="UTF-8">
-    <meta name="google-adsense-account" content="ca-pub-3945386043578817">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/getstatus.js"></script>
     <audio id="audio" src="./assets/audio/Broken Moon - Suika's Theme (Piano Version) (320 kbps).mp3"></audio>
     <meta name="description" content="かずめさーばーの公式サイト!">
     <meta itemprop="name" content="かずめさーばー">
@@ -30,6 +30,7 @@
 <body>
     <div class="navbar">
         <a href="./">ホーム</a>
+        <a href="./rule">ルール</a>
         <a href="./bans">banリスト</a>
         <a href="./wiki">Wiki</a>
         <a href="./discord">Discord</a>
@@ -41,7 +42,20 @@
             Your browser does not support the video.
         </video>
     </div>
-
+    
+    <div class="widget">
+        <h2 class="widget-title">Server Status</h2>
+        <div class="server-info">
+            <img id="server-icon" src="" alt="サーバーアイコン">
+            <div class="status">
+                <p id="status"></p>
+                <p id="players"></p>
+            </div>
+        </div>
+        <p id="motd" class="motd"></p>
+        <p id="version" class="version"></p>
+    </div>
+    
     <div id="home" class="content">
         <h1>かずめさーばー</h1>
         <p>coming soon...</p>

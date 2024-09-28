@@ -1,3 +1,8 @@
+/*
+tailwindとか使ってると思ったか？
+残念、面白くないんで全部書いてます（笑）
+*/
+
 body {
     margin: 0;
     padding: 0;
@@ -5,6 +10,26 @@ body {
     color: #fff;
     overflow-y: auto;
     scrollbar-width: thin;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 5px rgba(255, 252, 252, 0.664);
+}
+
+.rules-section {
+    text-align: left;
+    display: inline-block;
+    max-width: 800px;
+    width: 100%;
+}
+
+.yohaku {
+    margin-bottom: 40px;    
+}
+
+.rules-section ul {
+    list-style-position: inside; 
+    padding-left: 20px;
 }
 
 ::-webkit-scrollbar {
@@ -85,13 +110,86 @@ h1 {
 }
 
 .footer {
-    background-color: #333;
+    background-color: #3333338e;
     color: #fff;
     text-align: center;
-    padding: 20px;
-    position: fixed;
+    padding: 0.1px;
+    /*position: fixed;
+    bottom: 0;*/
     width: 100%;
-    bottom: 0;
+    z-index: -1;
+}
+
+/* クソダサwiget */
+
+.widget {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background-color: rgba(66, 66, 66, 0.13);
+    color: #bbbbbb;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(77, 77, 77, 0.6);
+    z-index: 2;
+    max-width: 220px;
+    transition: transform 0.3s ease;
+}
+
+.widget:hover {
+    transform: scale(1.01);
+}
+
+.widget-title {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.server-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#server-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #686868;
+    margin-right: 5px;
+}
+
+.status {
+    flex-grow: 1;
+}
+
+.status p {
+    margin: 2px 0;
+    text-align: left;
+}
+
+.motd {
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0;
+    word-wrap: break-word;
+}
+
+.version {
+    text-align: center;
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+
+
+/*mobile*/
+
+@media (max-width: 768px) {
+    .widget {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
